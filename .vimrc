@@ -36,10 +36,10 @@ autocmd BufRead *
 "Remove trailing whitespaces on save
 autocmd BufWritePre *.js :%s/\s\+$//e
 
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_user_command =
-    \ ['.git', 'cd %s && git ls-files . -co --exclude-standard']
-let g:ctrlp_working_path_mode = 'c' 
+"let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_custom_ignore = {
+\	'dir': 'bower_components$\|node_modules$\|dist$'
+\}
 
 
 "CtrlP config: Use enter to open file in new tab and ctrl t to replace the existing file
