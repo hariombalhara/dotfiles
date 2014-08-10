@@ -23,7 +23,19 @@ set nu
 set hlsearch
 set ai
 
+"Convenient aliases
+cabbrev Tabn tabn
+cabbrev Tabp tabp
+cabbrev Tabe tabe
+
+
+"Refresh screen to clear garbled text
 map <F5> :redraw!<CR>
+
+"In normal mode select the just pasted text using this
+nnoremap gp `[v`]
+imap jj <Esc>
+
 " Add switch to last tab shotcut
 let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
