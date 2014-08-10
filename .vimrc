@@ -5,16 +5,18 @@ Plugin 'ctrlp.vim'
 Plugin 'syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
-Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 "Change syntax error highlighti color
 hi clear SpellBad
 hi SpellBad cterm=underline,bold ctermfg=white ctermbg=red
+
+"Enable syntax higlighting
 syntax enable
 
-
+"Show tabs/newlines
 set list
+
 set tabstop=4
 set shiftwidth=4
 set nu
