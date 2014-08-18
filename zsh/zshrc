@@ -64,6 +64,7 @@ export PATH="/home/hariom/.rvm/gems/ruby-1.9.3-p327/bin:/home/hariom/.rvm/gems/r
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 source ~/dotfiles/zsh/secrets.zsh
+source ~/dotfiles/zsh/undistract-me.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
