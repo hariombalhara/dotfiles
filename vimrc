@@ -67,7 +67,7 @@ let g:syntastic_javascript_jshint_conf = '~/.jshintrc'
 
 "There are garbled text issues with syntastic https://github.com/scrooloose/syntastic/issues/822. So trigger it only on save
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
-autocmd BufWritePre * :SyntasticCheck
+autocmd BufWritePost * :SyntasticCheck
 
 "Show tab characters and eol
 set listchars=tab:▸\ ,eol:¬
