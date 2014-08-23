@@ -7,7 +7,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 call vundle#end()
 
-"Change syntax error highlighti color
+"Change syntax error highlight color
 hi clear SpellBad
 hi SpellBad cterm=underline,bold ctermfg=white ctermbg=red
 
@@ -28,13 +28,11 @@ cabbrev Tabn tabn
 cabbrev Tabp tabp
 cabbrev Tabe tabe
 
-
 "Refresh screen to clear garbled text
 map <F5> :redraw!<CR>
 
 "In normal mode select the just pasted text using this
 nnoremap gp `[v`]
-imap jj <Esc>
 
 " Add switch to last tab shotcut
 let g:lasttab = 1
