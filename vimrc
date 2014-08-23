@@ -5,6 +5,7 @@ Plugin 'ctrlp.vim'
 Plugin 'syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-unimpaired'
 call vundle#end()
 
 "Change syntax error highlight color
