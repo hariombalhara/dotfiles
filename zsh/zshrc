@@ -11,7 +11,7 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 
 # Fix typos
-setopt correct_all
+#setopt correct_all
 
 
 # Example aliases
@@ -59,7 +59,7 @@ plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/home/hariom/.rvm/gems/ruby-1.9.3-p327/bin:/home/hariom/.rvm/gems/ruby-1.9.3-p327@global/bin:/home/hariom/.rvm/rubies/ruby-1.9.3-p327/bin:/home/hariom/.rvm/bin:/home/hariom/.nvm/v0.10.21/bin:/opt/node_modules/po2json/bin:/opt/Sublime Text 2:/opt/PhpStorm/bin:/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/rake-pipeline-master/bin:/home/hariom/.rvm/bin:/opt/charles/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
