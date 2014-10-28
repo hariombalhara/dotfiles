@@ -4,9 +4,14 @@ call vundle#begin()
 Plugin 'ctrlp.vim'
 Plugin 'syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
+
+filetype plugin on
+
+" automatically leave insert mode after 'updatetime' milliseconds of inaction
+au CursorHoldI * stopinsert
 
 "Change syntax error highlight color
 hi clear SpellBad
